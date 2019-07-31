@@ -3,9 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test</title>
-	<script src="/libs/jquery.min.js"></script>
 </head>
 <body>
 	<a href="#" class="click">Click Me!!!</a>
 </body>
+<script src="/libs/jquery.min.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+		$('.click').on('click', function(event) {
+			event.preventDefault();
+			alert('x');
+		});
+	});
+</script>
 </html>
